@@ -10,16 +10,18 @@ def pascal_triangle(n):
     """
     top = [1]
     bottom = []
+    all = []
     if n <= 0:
         return []
-    print(top)
+    all.append(top)
     while(n - 1):
         bottom.append(1)
         if len(top) > 1:
             for idx in range(len(top) - 1):
                 bottom.append(top[idx] + top[idx + 1])
         bottom.append(1)
-        print("[{}]".format(",".join([str(x) for x in bottom])))
+        all.append(bottom)
         top = bottom
         bottom = []
         n -= 1
+    return all
