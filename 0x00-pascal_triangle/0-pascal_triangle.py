@@ -4,7 +4,7 @@ this is module
 """
 
 
-def pascal_triangle(n - 1):
+def pascal_triangle(n):
     """
     iam here
     """
@@ -13,7 +13,7 @@ def pascal_triangle(n - 1):
     if n <= 0:
         return []
     print(top)
-    while(n):
+    while(n - 1):
         bottom.append(1)
         if len(top) > 1:
             for idx in range(len(top) - 1):
