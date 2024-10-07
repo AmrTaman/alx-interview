@@ -4,7 +4,7 @@ this is module
 """
 
 
-def pascal_triangle(n):
+def pascal_triangle(n - 1):
     """
     iam here
     """
