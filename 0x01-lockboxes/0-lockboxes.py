@@ -9,6 +9,7 @@ def canUnlockAll(boxes):
     iam here
     """
     unlocked = [False] * len(boxes)
+    unlocked[0] = True
     queue = [0]
 
     while queue:
